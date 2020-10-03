@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -11,27 +14,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0632ddf-a9bc-42fc-b004-a51de6963a3a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/laraNuxtChatFront/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/laraNuxtChatFront/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/assets/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/components/Logo.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/components/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/layouts/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/layouts/default.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/middleware/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/nuxt.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/pages/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/pages/app.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/pages/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/plugins/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/plugins/axios.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/static/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/static/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/store/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/yarn.lock" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt/plugins/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt/plugins/axios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,5 +208,9 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="85" y="39" width="647" height="822" key="find.popup/-1440.70.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1601466433105" />
+    <state x="84" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1601718695375">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="84" y="196" width="670" height="676" key="search.everywhere.popup/-1440.70.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1601718695375" />
   </component>
 </project>

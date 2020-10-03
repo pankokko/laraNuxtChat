@@ -21,3 +21,14 @@ Route::get("/get", "Api\RestController@get")->name("get");
 Route::post("/add", "Api\RestController@add")->name("add");
 Route::put("/edit", "Api\RestController@edit")->name("edit");
 Route::delete("/remove", "Api\RestController@remove")->name("remove");
+
+    Route::group([
+        'prefix' => 'auth'
+    ], function () {
+        Route::post('login', 'AuthController@login');
+    });
+    Route::prefix('auth')->middleware('auth:api')->group(function () {
+        Route::post('logout', 'AuthController@logout');
+        Route::post('refresh', 'AuthController@refresh');
+        Route::get('me', 'AuthController@me');
+    });
