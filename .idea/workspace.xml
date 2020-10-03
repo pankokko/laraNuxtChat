@@ -11,19 +11,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0632ddf-a9bc-42fc-b004-a51de6963a3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/laraNuxtChatFront/pages/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laraNuxtChatFront/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/laraNuxtChatFront/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/assets/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/components/Logo.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/components/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/layouts/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/layouts/default.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/middleware/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/nuxt.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/pages/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/pages/app.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/pages/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/plugins/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/plugins/axios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/static/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/store/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/laraNuxtChatFront/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/laraNuxtChatFront" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -129,6 +149,11 @@
       <path value="$PROJECT_DIR$/vendor/facade/ignition" />
       <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
       <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/vendor/tymon/jwt-auth" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
     </include_path>
   </component>
   <component name="ProjectId" id="1iEHXqIEuDM0mvkiJ1FbevRYX8e" />
@@ -151,6 +176,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
     <property name="vuejs.nuxt.types-notification-shown" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/resources" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
@@ -166,6 +197,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601465875382</updated>
       <workItem from="1601465876809" duration="8221000" />
+      <workItem from="1601716091900" duration="333000" />
     </task>
     <servers />
   </component>
@@ -182,6 +214,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="85" y="39" width="647" height="822" key="find.popup" timestamp="1601466433105">
