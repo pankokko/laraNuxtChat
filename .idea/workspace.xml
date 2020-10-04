@@ -14,11 +14,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0632ddf-a9bc-42fc-b004-a51de6963a3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt/pages/two.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt/store/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt/store/todo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt/nuxt.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt/pages/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt/pages/app.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt/plugins/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt/plugins/axios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,9 +215,9 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="85" y="39" width="647" height="822" key="find.popup/-1440.70.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1601466433105" />
-    <state x="84" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1601718695375">
+    <state x="84" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1601723493275">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="84" y="196" width="670" height="676" key="search.everywhere.popup/-1440.70.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1601718695375" />
+    <state x="84" y="196" width="670" height="676" key="search.everywhere.popup/-1440.70.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1601723493275" />
   </component>
 </project>

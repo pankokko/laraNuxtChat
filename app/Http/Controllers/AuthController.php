@@ -1,8 +1,11 @@
 <?php
+
     namespace App\Http\Controllers;
+
     use Illuminate\Http\Request;
     use Illuminate\Support\Facades\Auth;
     use App\Http\Controllers\Controller;
+
     class AuthController extends Controller
     {
         /**
@@ -14,6 +17,7 @@
         {
             $this->middleware('auth:api', ['except' => ['login']]);
         }
+
         /**
          * Get a JWT via given credentials.
          *
@@ -25,12 +29,12 @@
 //            if(Auth::check()){
 //                return response()->json(['error' => 'you allready logging in'], 200);
 //            }
-            if (! $token = auth()->attempt($credentials)) {
+            if (!$token = auth()->attempt($credentials)) {
                 return response()->json(['error' => 'Unauthorized'], 401);
             }
-//            eval(\Psy\Sh());
             return $this->respondWithToken($token);
         }
+
         /**
          * Get the authenticated User.
          *
@@ -39,11 +43,12 @@
         public function me(Request $request)
         {
             $res = [
-                'user' => auth()->user(),
-                'header'  => $request->header('Authorization')
+                'user'   => auth()->user(),
+                'header' => $request->header('Authorization')
             ];
             return response()->json($res);
         }
+
         /**
          * Log the user out (Invalidate the token).
          *
@@ -54,6 +59,7 @@
             auth()->logout();
             return response()->json(['message' => 'Successfully logged out']);
         }
+
         /**
          * Refresh a token.
          *
@@ -63,10 +69,11 @@
         {
             return $this->respondWithToken(auth()->refresh());
         }
+
         /**
          * Get the token array structure.
          *
-         * @param  string $token
+         * @param string $token
          *
          * @return \Illuminate\Http\JsonResponse
          */
@@ -74,8 +81,8 @@
         {
             return response()->json([
                 'access_token' => $token,
-                'token_type' => 'bearer',
-                'expires_in' => auth("api")->factory()->getTTL() * 60
+                'token_type'   => 'bearer',
+                'expires_in'   => auth("api")->factory()->getTTL() * 60
             ]);
         }
     }
