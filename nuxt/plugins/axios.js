@@ -1,5 +1,5 @@
 export let axios;
-
+// import { testCookie } from '@/services/token'
 export default ({ store, $axios, $cookies }) => {
 
   $axios.onRequest(config => {
@@ -9,14 +9,13 @@ export default ({ store, $axios, $cookies }) => {
   });
 
   $axios.onResponse(response => {
-      if(!($cookies.get('jwt'))) {
+    if(!($cookies.get('jwt'))) {
         $cookies.set('jwt', response.data.access_token, {
           path: '/',
           maxAge: 60 * 60 * 24 * 7
         })
       }
-
-    // store.commit('setToken', response.data.access_token)
+    store.commit('user/setUser', response.data)
     return Promise.resolve(response);
   })
 

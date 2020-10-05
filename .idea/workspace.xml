@@ -14,18 +14,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0632ddf-a9bc-42fc-b004-a51de6963a3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/nuxt/pages/two.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nuxt/store/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nuxt/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nuxt/store/todo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt/services/token.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuxt/store/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt/nuxt.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt/pages/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt/pages/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt/pages/two.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt/pages/two.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt/plugins/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt/plugins/axios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt/store/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Auth/AuthService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt/store/todo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,11 +166,13 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
     <property name="vuejs.nuxt.types-notification-shown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Services/Auth" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/resources" />
     </key>
@@ -211,13 +212,21 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="117" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601805265621">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="117" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1440.70.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1601805265621" />
+    <state x="0" y="89" key="SettingsEditor" timestamp="1601808235513">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="0" y="89" key="SettingsEditor/-1440.70.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1601808235513" />
     <state x="85" y="39" width="647" height="822" key="find.popup" timestamp="1601466433105">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="85" y="39" width="647" height="822" key="find.popup/-1440.70.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1601466433105" />
-    <state x="84" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1601723493275">
+    <state x="84" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1601807988718">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="84" y="196" width="670" height="676" key="search.everywhere.popup/-1440.70.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1601723493275" />
+    <state x="84" y="196" width="670" height="676" key="search.everywhere.popup/-1440.70.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1601807988718" />
   </component>
 </project>

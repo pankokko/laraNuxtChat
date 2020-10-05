@@ -30,5 +30,6 @@ Route::delete("/remove", "Api\RestController@remove")->name("remove");
     Route::prefix('auth')->middleware('auth:api')->group(function () {
         Route::post('logout', 'AuthController@logout');
         Route::post('refresh', 'AuthController@refresh');
+        Route::post('save', "AuthController@save");
         Route::get('me', 'AuthController@me');
     });

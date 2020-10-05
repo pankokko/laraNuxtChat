@@ -1,7 +1,7 @@
 <template>
 <div>
   <p>next page</p>
-  {{ $store.state.token}}
+  <p>{{$store.state.user.name}}</p>
 </div>
 
 
