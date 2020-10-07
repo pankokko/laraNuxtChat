@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   server: {
@@ -15,11 +17,15 @@ export default {
       {hid: 'description', name: 'description', content: ''}
     ],
     link: [
-      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
+      {rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.2.0/css/all.css'}
     ]
   },
   axios: {
-    baseURL: '',
+    //追加
+    baseURL: process.env.API_URL,
+    //追加
+    credentials: true
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -32,11 +38,15 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-  buildModules: [],
+  buildModules: [
+    // '@nuxtjs/vuetify',
+  ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     '@nuxtjs/axios',
+    '@nuxtjs/dotenv',
+    'nuxt-buefy',
     ['cookie-universal-nuxt', {parseJSON: false}]
   ],
 

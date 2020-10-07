@@ -1,6 +1,8 @@
 export let axios;
 // import { testCookie } from '@/services/token'
 export default ({ store, $axios, $cookies }) => {
+  //クロスドメインなのでXMLHttpRequestをつけないとAPI側でAjaxか判定できない
+  $axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'
 
   $axios.onRequest(config => {
     const token = $cookies.get('jwt')
@@ -12,7 +14,7 @@ export default ({ store, $axios, $cookies }) => {
     if(!($cookies.get('jwt'))) {
         $cookies.set('jwt', response.data.access_token, {
           path: '/',
-          maxAge: 60 * 60 * 24 * 7
+          maxAge: 60 * 60
         })
       }
     store.commit('user/setUser', response.data)

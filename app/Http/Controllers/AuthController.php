@@ -5,9 +5,10 @@
     use Illuminate\Http\Request;
     use Illuminate\Support\Facades\Auth;
     use App\Services\Auth\AuthService;
-    use App\Http\Controllers\Controller;
+    use App\Post;
+    use App\Http\Controllers\Api\AbstractApiController;
 
-    class AuthController extends Controller
+    class AuthController extends AbstractApiController
     {
         protected $service;
 
@@ -74,35 +75,12 @@
 
         public function save(Request $request)
         {
-            $data = $request->all();
-            dd($data);
-        }
+            $request['content'];
+            $test = Post::create(['content' => $request['content']]);
 
-        /**
-         * Get the token array structure.
-         *
-         * @param string $token
-         *
-         * @return \Illuminate\Http\JsonResponse
-         */
-        protected function respondWithToken($token)
-        {
-            return response()->json([
-                'user'         => auth()->user(),
-                'access_token' => $token,
-                'token_type'   => 'bearer',
-                'expires_in'   => auth("api")->factory()->getTTL() * 60
-            ]);
-        }
-
-        protected function responseData($request)
-        {
-
-            return response()->json(
-                $res = [
-                    'user'   => auth()->user(),
-                    'header' => $request->header('Authorization')
-                ]
-            );
+            if (!$test) {
+                return response()->json(['error' => 'Unauthorized'], 401);
+            }
+            return response()->json($test);
         }
     }
