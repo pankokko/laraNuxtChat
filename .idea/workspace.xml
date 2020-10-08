@@ -14,21 +14,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0632ddf-a9bc-42fc-b004-a51de6963a3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/AjaxOnly.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Api/CommentService.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/nuxt/middleware/logined_user.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/nuxt/middleware/not_logined_user.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/nuxt/pages/user/login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AbstractApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AbstractApiController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cors.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_04_121054_add_table_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_04_121054_post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt/nuxt.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt/pages/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt/pages/app.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt/pages/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt/plugins/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt/plugins/axios.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
@@ -43,7 +38,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/nuxt" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -179,11 +174,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Http/Controllers" />
+      <recent name="$PROJECT_DIR$/app/Models" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Api/Chat" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Api" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers" />
       <recent name="$PROJECT_DIR$/app/Services/Auth" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
   <component name="RunManager">
@@ -206,7 +201,8 @@
       <workItem from="1601897131919" duration="3292000" />
       <workItem from="1601940848696" duration="1897000" />
       <workItem from="1602024945499" duration="5013000" />
-      <workItem from="1602073125895" duration="3159000" />
+      <workItem from="1602073125895" duration="3689000" />
+      <workItem from="1602157797147" duration="2870000" />
     </task>
     <servers />
   </component>
@@ -230,10 +226,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="183" y="232" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1440.70.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1601899284210" />
-    <state x="117" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602026070730">
+    <state x="117" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602159589482">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="117" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1440.70.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1602026070730" />
+    <state x="117" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1440.70.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1602159589482" />
     <state x="0" y="89" key="SettingsEditor" timestamp="1601808235513">
       <screen x="0" y="0" width="1600" height="900" />
     </state>

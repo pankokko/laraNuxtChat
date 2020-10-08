@@ -3,7 +3,7 @@
     <div class="hero-body">
       <div class="container">
         <p class="title">
-            Chat Clone
+          Chat Clone {{ user.name }}
         </p>
       </div>
     </div>
@@ -12,7 +12,7 @@
         <b-input type="text"
                  placeholder="type your message"
                  icon-pack="fas"
-                 icon-right	="share"
+                 icon-right="share"
                  icon-right-clickable
                  v-model="message"
                  @icon-right-click="sendMessage(message)"
@@ -27,8 +27,11 @@
 export default {
   middleware: 'not_logined_user',
   async asyncData({$axios, store}) {
+    return {
+      user: store.state.user.user
+    }
   },
-  data(){
+  data() {
     return {
       message: ''
     }
@@ -36,7 +39,11 @@ export default {
   created() {
   },
   methods: {
-    sendMessage(value){
+    async sendMessage(value) {
+      const response = await this.$axios.post('http://localhost:8000/api/chat/save', {text: value})
+      if (response.data) {
+        console.log(response.data)
+      }
     },
   }
 }
