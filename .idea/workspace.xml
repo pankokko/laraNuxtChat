@@ -14,19 +14,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0632ddf-a9bc-42fc-b004-a51de6963a3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Services/Api/CommentService.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/nuxt/middleware/logined_user.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/nuxt/middleware/not_logined_user.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/nuxt/pages/user/login.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AbstractApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AbstractApiController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cors.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt/nuxt.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt/pages/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt/pages/app.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt/plugins/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt/plugins/axios.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,6 +200,7 @@
       <workItem from="1602024945499" duration="5013000" />
       <workItem from="1602073125895" duration="3689000" />
       <workItem from="1602157797147" duration="2870000" />
+      <workItem from="1602161795146" duration="415000" />
     </task>
     <servers />
   </component>
