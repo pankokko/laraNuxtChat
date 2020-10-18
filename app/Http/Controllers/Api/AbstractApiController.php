@@ -63,11 +63,11 @@ class AbstractApiController extends Controller
      */
     public static function makeResponse($message, $data)
     {
-        return [
+        return Response::json([
             'success' => true,
             'data'    => $data,
             'message' => $message,
-        ];
+        ]);
     }
 
     /**
@@ -97,6 +97,7 @@ class AbstractApiController extends Controller
      */
     private function convertToUtf8($data)
     {
+
         if (is_string($data)) {
             return mb_detect_encoding($data) === false ? utf8_encode($data) : $data;
         } elseif (is_array($data)) {

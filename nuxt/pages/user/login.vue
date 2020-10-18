@@ -24,6 +24,9 @@ export default {
       password: ''
     }
   },
+  created(){
+    console.log(this.$route)
+  },
   methods: {
     async submit () {
       await this.$store.dispatch('user/login', {
@@ -35,4 +38,4 @@ export default {
   }
 }
 </script>
-<!--{name: 'test', email: 'test@gmail.com', password: '5927ffpa'}-->
+<!--{name: 'test', email: 'test@gmail.com', password: '09210921'}-->
