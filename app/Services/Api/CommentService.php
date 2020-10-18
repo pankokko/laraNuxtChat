@@ -9,12 +9,12 @@
         public function saveComment($data, $userId)
         {
             try {
-                Comment::create([
+                $comment = Comment::create([
                     'user_id'  => $userId,
                     'group_id' => 1,
                     'text'     => $data,
                 ]);
-                return true;
+                return $comment;
             } catch (\Exception $e) {
                 logger()->error($e->getMessage());
                 return false;

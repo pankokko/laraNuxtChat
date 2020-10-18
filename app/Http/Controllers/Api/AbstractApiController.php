@@ -63,11 +63,11 @@ class AbstractApiController extends Controller
      */
     public static function makeResponse($message, $data)
     {
-        return [
+        return Response::json([
             'success' => true,
             'data'    => $data,
             'message' => $message,
-        ];
+        ]);
     }
 
     /**

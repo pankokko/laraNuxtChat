@@ -1,10 +1,11 @@
-// export const testCookie = (token) => {
-//   if (!($cookies.get('jwt'))) {
-//     $cookies.set('jwt', token, {
-//       path: '/',
-//       maxAge: 60 * 60 * 24 * 7
-//     })
-//   }
-// }
-//
-//
+export const SetCookie = (token, cookie) => {
+  cookie.set('jwt', token, {
+    path: '/',
+    maxAge: 60 * 60
+  })
+}
+
+export const GetCookie = (token, cookie) => {
+ return cookie.get(token)
+}
+

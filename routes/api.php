@@ -37,5 +37,6 @@ Route::delete("/remove", "Api\RestController@remove")->name("remove");
     });
     //チャットルーム関連
     Route::namespace('Api\Chat')->prefix('chat')->group(function (){
-       Route::post('save', 'ChatController@store')->name('send_message');
+        Route::get('all_info', 'ChatController@index')->name('index');
+        Route::post('save', 'ChatController@store')->name('send_message');
     });
