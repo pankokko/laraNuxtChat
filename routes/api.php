@@ -36,7 +36,11 @@ Route::delete("/remove", "Api\RestController@remove")->name("remove");
         Route::get('me', 'AuthController@me');
     });
     //チャットルーム関連
-    Route::namespace('Api\Chat')->prefix('chat')->group(function (){
-        Route::get('all_info', 'ChatController@index')->name('index');
-        Route::post('save', 'ChatController@store')->name('send_message');
+    Route::prefix('chat')->group(function (){
+        //チャットグループとチャットコメントを全て取得
+        Route::get('all_info', 'Api\Chat\ChatController@index')->name('index');
+        Route::post('save', 'Api\Chat\ChatController@store')->name('send_message');
+
+        //チャットグループを新規作成
+        Route::post('group/create', 'APi\Group\GroupController@create');
     });

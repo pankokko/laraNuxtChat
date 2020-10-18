@@ -11,7 +11,7 @@
             try {
                 $comment = Comment::create([
                     'user_id'  => $userId,
-                    'group_id' => 1,
+                    'group_id' => 6,
                     'text'     => $data,
                 ]);
                 return $comment;

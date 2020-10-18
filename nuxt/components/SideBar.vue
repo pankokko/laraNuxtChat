@@ -17,7 +17,10 @@
           </div>
           <b-menu class="is-custom-mobile">
             <b-menu-list>
-              <b-menu-item label="UserName" icon="link"></b-menu-item>
+              <b-menu-item active expanded icon="settings" label="Groups">
+                <b-menu-item icon="group" :label="group.name" v-for="group in chatGroup" :key="group.id"></b-menu-item>
+                <modal-component @append-data="appendGroup"></modal-component>
+              </b-menu-item>
             </b-menu-list>
             <b-menu-list label="その他">
               <b-menu-item icon="logout" label="Logout" @click="logout"></b-menu-item>
@@ -30,13 +33,22 @@
 </template>
 
 <script>
+
+import ModalComponent from "@/components/ModalComponent";
+
 export default {
+  props: ['chatGroup'],
+  components: {
+    ModalComponent
+  },
   data() {
     return {
       expandOnHover: false,
       mobile: "reduce",
-      reduce: false
+      reduce: false,
     }
+  },
+  created(){
   },
   methods: {
     async logout() {
@@ -44,6 +56,9 @@ export default {
         .then(() => {
           this.$router.push({name: "user-login"})
         })
+    },
+    appendGroup(value) {
+      this.chatGroup.push(value)
     }
   }
 }
@@ -53,6 +68,7 @@ export default {
 .p-1 {
   padding: 1em;
 }
+
 .sidebar-page {
   display: flex;
   flex-direction: column;
@@ -66,6 +82,7 @@ export default {
     // min-height: 100vh;
   }
 }
+
 @media screen and (max-width: 1023px) {
   .b-sidebar {
     .sidebar-content {
@@ -79,8 +96,10 @@ export default {
                   display: none;
                 }
               }
+
               ul {
                 padding-left: 0;
+
                 li {
                   a {
                     display: inline-block;
@@ -89,6 +108,7 @@ export default {
               }
             }
           }
+
           .menu-label:not(:last-child) {
             margin-bottom: 0;
           }
@@ -97,6 +117,7 @@ export default {
     }
   }
 }
+
 @media screen and (min-width: 1024px) {
   .b-sidebar {
     .sidebar-content {
@@ -110,8 +131,10 @@ export default {
                   display: none;
                 }
               }
+
               ul {
                 padding-left: 0;
+
                 li {
                   a {
                     display: inline-block;
@@ -120,6 +143,7 @@ export default {
               }
             }
           }
+
           .menu-label:not(:last-child) {
             margin-bottom: 0;
           }
